@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Notes App",
+    "slug": "notes-app-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#F97316"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.notesapp.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F97316"
+      },
+      "package": "com.notesapp.mobile",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to attach images to notes.",
+          "cameraPermission": "The app needs access to your camera to take photos for notes."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1c04fc43-5787-4ea7-9b2b-355120c848ca"
+      }
+    }
+  }
+}
